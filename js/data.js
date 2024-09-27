@@ -3,7 +3,7 @@ const cvData = {
   personalInfo: {
     name: "Juan Pérez",
     contact: {
-      email: "juan.perez@example.com",
+      email: "diego.cervera@bue.edu.ar",
       phone: "+54 9 11 1234 5678",
       address: "Calle Falsa 123, Buenos Aires, Argentina",
       linkedin: "https://www.linkedin.com/in/juanperez",
