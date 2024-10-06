@@ -1,0 +1,156 @@
+/* ESTILOS PARA EL HEADER */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para el header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  color: var(--primary-color);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Botón de menú para pantallas pequeñas */
+#menu-toggle {
+  display: block;
+  padding: 12px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Menú oculto por defecto */
+nav {
+  display: none; /* Ocultar menú en móviles */
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  opacity: 0; /* Opacidad inicial */
+  transition: opacity 2s linear, visibility 2s linear; /* Transición */
+  visibility: hidden; /* Ocultar el menú */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* Mostrar menú al hacer clic en el botón */
+nav.show {
+  display: flex; /* Mostrar menú */
+  opacity: 1; /* Opacidad total */
+  visibility: visible; /* Hacer visible el menú */
+}
+
+/* ESTILOS HOME */
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+#infoSummary {
+  font-weight: normal;
+  font-size: 1.35rem;
+  line-height: 2rem;
+  padding: 15px 0;
+  text-align: center;
+}
+
+#redes {
+  margin: 20px 0;
+}
+
+#redes > a {
+  color: var(--primary-color);;
+  font-size: 2.1rem;
+  margin-right: 10px;
+}
+
+
+#redes > a:hover {
+  color: var(--secondary-color);;
+}
+
+#iconScroolContainer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+@keyframes animationIconScroll {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-0.6em); }
+  50%  { transform: translateY(0); }
+  75%  { transform: translateY(0.6em); }
+  100% { transform: translateY(0); }
+}
+
+.scroll-icon__wheel-outer {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: .6em;
+  height: 1em;
+  width: .4em;
+  margin-left: -.2em;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: var(--primary-color);;
+  animation: animationIconScroll 2.75s ease-in-out infinite;
+}
+
+.scroll-icon {
+  display: block;
+  position: relative;
+  height: 3em;
+  width: 1.5em;
+  border: .25em solid var(--primary-color);;
+  border-radius: 1em;
+}

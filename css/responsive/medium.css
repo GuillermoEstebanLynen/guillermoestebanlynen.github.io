@@ -1,3 +1,22 @@
 /* Tabletas y superiores (mínimo 768px) */
 @media (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Ocultar botón en pantallas grandes */
+  }
+
+  nav {
+    display: flex; /* Mostrar menú en pantallas grandes */
+    flex-direction: row; /* Alinear elementos horizontalmente */
+    position: static; /* Restablecer la posición */
+    opacity: 1; /* Opacidad total en pantallas grandes */
+    visibility: visible; /* Hacer visible el menú */
+  }
+
+  nav ul {
+    flex-direction: row; /* Alinear elementos en fila */
+  }
+
+  nav ul li {
+    margin-left: 20px; /* Margen entre elementos */
+  }
 }

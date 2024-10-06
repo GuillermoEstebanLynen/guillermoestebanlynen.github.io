@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("responsive/base.css");
+@import url("responsive/small.css");
+@import url("responsive/medium.css");
+@import url("responsive/large.css");
+@import url("responsive/xlarge.css");
+@import url("bot.css");
 
-/* UTILTARIOS */
+:root {
+  --primary-color: cornflowerblue;
+  --secondary-color: #0047AB;
+}
+
+/* ESTILOS UTILITARIOS */
 
 * {
   margin: 0;
@@ -19,151 +30,14 @@ html {
   scroll-padding-top: 60px;
 }
 
-header {
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  height: 60px;
-  background-color: white;
-}
-
 .scrool {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 section {
-    height: 100vh;
-    scroll-snap-align: start;
-    padding: 0;
+  height: 100vh;
+  scroll-snap-align: start;
+  padding: 91.59px 20px 20px 20px;
 }
-
-.hidden {
-  max-height: 0px;
-  opacity: 0;
-  height: 0;
-  /* transition: opacity 1.5s ease, height 3s ease 1s; */
-}
-
-.visible {
-  max-height: auto;
-  /* transition: opacity 1.5s ease, height 3s ease; */
-}
-
-/* Header */
-
-#mobile-menu {
-  background-color: white;
-}
-
-/* Home */
-
-#info {
-  display: flex;
-  flex-direction: column;
-  padding: 60px 20px 20px 20px;
-}
-
-h2 {
-  font-size: 2.7rem;
-}
-
-#infoSummary {
-  padding: 15px 0;
-}
-
-#redes > a {
-  font-size: 2.1rem;
-  margin-right: 10px;
-}
-
-/* Estilo del botón flotante */
-.bot-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 1000;
-}
-
-/* Contenedor del bot */
-.bot-container {
-    display: none;
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    width: 300px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-}
-
-/* Encabezado del bot */
-.bot-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Cerrar el bot */
-.close-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Contenido del bot */
-.bot-content {
-    padding: 10px;
-    height: 200px;
-    overflow-y: auto;
-}
-
-/* Input del bot */
-.bot-input {
-    display: flex;
-    border-top: 1px solid #ccc;
-}
-
-.bot-input input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    outline: none;
-}
-
-.bot-input button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-/* RESPONSIVE */
-
-@import url("responsive/small.css");
-@import url("responsive/medium.css");
-@import url("responsive/large.css");
-@import url("responsive/xlarge.css");
-
-/* OTROS */
-
-@import url("bot.css");

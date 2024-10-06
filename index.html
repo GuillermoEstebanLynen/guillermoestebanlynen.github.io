@@ -14,40 +14,54 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
+    <!-- HEADER -->
+    <header>
+      <p id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </p>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li>
+            <a href="#" onclick="scrollToSection('experience')">
+              Experiencia
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToSection('education')">
+              Educación
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToSection('skills')">
+              Habilidades
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToSection('certifications')">
+              Certificaciones
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToSection('myPerson')">
+              Mas sobre mi
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- SECCIONES -->
     <div class="scrool">
-      <header>
-        <nav>
-          <button type="button" id="button-mobile-menu">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <ul id="mobile-menu" class="hidden">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Experiencia</a></li>
-            <li><a href="#">Educacion</a></li>
-            <li><a href="#">Habilidades</a></li>
-            <li><a href="#">Certificaciones</a></li>
-          </ul>
-          <!-- <div>
-            <img
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt="Your Company"
-            />
-          </div> -->
-          <div id="menu-web" class="hidden">
-            <a href="#">Inicio</a>
-            <a href="#">Experiencia</a>
-            <a href="#">Educacion</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Certificaciones</a>
-          </div>
-        </nav>
-      </header>
       <section id="info">
-        <h2>
+        <h1>
           Hola soy<br />
           Guillermo
         </h2>
-        <p id="infoSummary"></p>
+        <h2 id="infoSummary">
+          Soy Desarrollador FullStack y líder técnico con más de 10 años
+          de experiencia en el desarrollo de aplicaciones y despliegue de
+          aplicaciones en servidores.
+        </p>
         <p id="redes">
           <a
             id="infoContactLinkedinLink"
@@ -64,34 +78,46 @@
             <i class="fa-brands fa-github"></i>
           </a>
         </p>
-      </section>
-      <section id="experience">experience</section>
-      <section id="education">education</section>
-      <section id="skills">skills</section>
-      <section id="certifications">certifications</section>
-    </div>
-    <div>
-      <!-- Botón para abrir el bot -->
-      <div id="botButton" class="bot-button" onclick="toggleBot()">💬</div>
-      <!-- Contenedor del bot -->
-      <div id="botContainer" class="bot-container">
-          <div class="bot-header">
+        <div id="iconScroolContainer">
+          <span class="scroll-icon">
+            <span class="scroll-icon__wheel-outer">
+              <span class="scroll-icon__wheel-inner"></span>
+            </span>
+          </span>
+        </div>
+        <!-- BOT -->
+        <div>
+          <!-- Botón para abrir el bot -->
+          <div id="botButton" class="bot-button" onclick="toggleBot()">💬</div>
+          <!-- Contenedor del bot -->
+          <div id="botContainer" class="bot-container">
+            <div class="bot-header">
               <h3>Willy</h3>
               <button onclick="toggleBot()" class="close-btn">X</button>
-          </div>
-          <div class="bot-content">
+            </div>
+            <div class="bot-content">
               <p>
                 Hola soy Willy el ayudante de Guille, el me transfirio su
                 personalidad para que te ayude a que lo conozcas mejor.
               </p>
-          </div>
-          <div class="bot-input">
-              <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
+            </div>
+            <div class="bot-input">
+              <input
+                type="text"
+                id="userInput"
+                placeholder="Escribe tu mensaje..."
+              />
               <button onclick="sendMessage()">Enviar</button>
+            </div>
           </div>
-      </div>
+        </div>
+      </section>
+      <section id="experience">Experiencia</section>
+      <section id="education">Educación</section>
+      <section id="skills">Habilidades</section>
+      <section id="certifications">Certificaciones</section>
+      <section id="myPerson">Mas sobre mi</section>
     </div>
-    <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/bot.js"></script>
   </body>

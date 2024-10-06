@@ -1,9 +1,15 @@
-// Selecciono elementos para el menu Mobile
-const botonMenu = document.getElementById('button-mobile-menu');
-const mobileMenu = document.getElementById('mobile-menu');
+// Selecciona el botón de toggle y el menú
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
 
-// Evento para el menu mobile
-botonMenu.addEventListener('click', function() {
-    mobileMenu.classList.toggle('hidden');
-    mobileMenu.classList.toggle('visible');
+// Agrega el evento de click para mostrar/ocultar el menú
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
 });
+
+
+function scrollToSection( seccion ) {
+    navMenu.classList.toggle('show');
+    const section = document.getElementById(seccion);
+    section.scrollIntoView({ behavior: "smooth" });
+}
