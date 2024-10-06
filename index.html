@@ -1,23 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum de Juan Pérez</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <div id="cv">
-        <h1>Currículum Vitae</h1>
-        <div id="personal-info"></div>
-        <div id="experience"></div>
-        <div id="education"></div>
-        <div id="skills"></div>
-        <div id="languages"></div>
-        <div id="certifications"></div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Guillermo Estebab Lynen</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
+    <script
+      src="https://kit.fontawesome.com/869443c7f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <div class="scrool">
+      <header>
+        <nav>
+          <button type="button" id="button-mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul id="mobile-menu" class="hidden">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Experiencia</a></li>
+            <li><a href="#">Educacion</a></li>
+            <li><a href="#">Habilidades</a></li>
+            <li><a href="#">Certificaciones</a></li>
+          </ul>
+          <!-- <div>
+            <img
+              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+              alt="Your Company"
+            />
+          </div> -->
+          <div id="menu-web" class="hidden">
+            <a href="#">Inicio</a>
+            <a href="#">Experiencia</a>
+            <a href="#">Educacion</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Certificaciones</a>
+          </div>
+        </nav>
+      </header>
+      <section id="info">
+        <h2>
+          Hola soy<br />
+          Guillermo
+        </h2>
+        <p id="infoSummary"></p>
+        <p id="redes">
+          <a
+            id="infoContactLinkedinLink"
+            href="https://www.linkedin.com/in/lynenguillermo/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            id="infoContactGithubLink"
+            href="https://github.com/GuillermoEstebanLynen"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </p>
+        <div id="botSection">
+          <div id="boxMessage">
+            <p class="messageBot">
+              <i class="fa-solid fa-user"></i>
+              <span>
+                Hola soy Willy el ayudante de Guille, el me transfirio su
+                personalidad para que te ayude a que lo conozcas mejor.
+              </span>
+            </p>
+          </div>
+          <div id="boxSendMessage">
+            <textarea name="messageSend" id="messageSend" rows="2"></textarea>
+            <button id="buttonMessageSend">Enviar</button>
+          </div>
+        </div>
+      </section>
+      <section id="experience">experience</section>
+      <section id="education">education</section>
+      <section id="skills">skills</section>
+      <section id="certifications">certifications</section>
+    </div>
     <script src="./js/data.js"></script>
-</body>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
