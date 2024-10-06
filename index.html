@@ -15,13 +15,17 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header id="containerHeader">
       <p id="menu-toggle">
         <i class="fa-solid fa-bars"></i>
       </p>
       <nav id="nav-menu">
         <ul>
-          <li><a href="#">Inicio</a></li>
+          <li>
+            <a href="#" onclick="scrollToSection('info')">
+              Inicio
+            </a>
+          </li>
           <li>
             <a href="#" onclick="scrollToSection('experience')">
               Experiencia
@@ -57,28 +61,26 @@
           Hola soy<br />
           Guillermo
         </h2>
-        <h2 id="infoSummary">
+        <h2 id="info-summary">
           Soy Desarrollador FullStack y líder técnico con más de 10 años
           de experiencia en el desarrollo de aplicaciones y despliegue de
           aplicaciones en servidores.
         </p>
         <p id="redes">
           <a
-            id="infoContactLinkedinLink"
             href="https://www.linkedin.com/in/lynenguillermo/"
             target="_blank"
           >
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
-            id="infoContactGithubLink"
             href="https://github.com/GuillermoEstebanLynen"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i>
           </a>
         </p>
-        <div id="iconScroolContainer">
+        <div id="icon-scrool-container">
           <span class="scroll-icon">
             <span class="scroll-icon__wheel-outer">
               <span class="scroll-icon__wheel-inner"></span>

@@ -12,17 +12,33 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;
-  color: var(--primary-color);
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
 
-/* Botón de menú para pantallas pequeñas */
-#menu-toggle {
+header.expandMobile{
   display: block;
+  position: absolute;
+  height: 100vh;
+  background-color: white;
+}
+
+/* Botón de menú para pantallas pequeñas */
+/* #menu-toggle {
+  display: block;
+  width: auto;
+  padding: 12px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+} */
+#menu-toggle > i {
+  display: inline-block;
+  width: auto;
   padding: 12px;
   font-size: 1.5rem;
   border-radius: 10px;
@@ -33,13 +49,14 @@ header {
 
 /* Menú oculto por defecto */
 nav {
+  margin-top: 20px;
   display: none; /* Ocultar menú en móviles */
   flex-direction: column;
   position: absolute;
   top: 50px;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: transparent;
   opacity: 0; /* Opacidad inicial */
   transition: opacity 2s linear, visibility 2s linear; /* Transición */
   visibility: hidden; /* Ocultar el menú */
@@ -48,10 +65,11 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  font-size: 3rem;
 }
 
 nav ul li {
@@ -59,12 +77,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--primary-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 2rem;
 }
 
 nav ul li a:hover {
+  font-size: 3rem;
   color: #ff6347;
 }
 
@@ -88,7 +107,7 @@ h1 {
   text-align: center;
 }
 
-#infoSummary {
+#info-summary {
   font-weight: normal;
   font-size: 1.35rem;
   line-height: 2rem;
@@ -111,7 +130,7 @@ h1 {
   color: var(--secondary-color);;
 }
 
-#iconScroolContainer {
+#icon-scrool-container {
   display: flex;
   justify-content: center;
   margin: 40px 0;
