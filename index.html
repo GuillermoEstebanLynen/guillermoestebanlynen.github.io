@@ -64,28 +64,35 @@
             <i class="fa-brands fa-github"></i>
           </a>
         </p>
-        <div id="botSection">
-          <div id="boxMessage">
-            <p class="messageBot">
-              <i class="fa-solid fa-user"></i>
-              <span>
-                Hola soy Willy el ayudante de Guille, el me transfirio su
-                personalidad para que te ayude a que lo conozcas mejor.
-              </span>
-            </p>
-          </div>
-          <div id="boxSendMessage">
-            <textarea name="messageSend" id="messageSend" rows="2"></textarea>
-            <button id="buttonMessageSend">Enviar</button>
-          </div>
-        </div>
       </section>
       <section id="experience">experience</section>
       <section id="education">education</section>
       <section id="skills">skills</section>
       <section id="certifications">certifications</section>
     </div>
+    <div>
+      <!-- Botón para abrir el bot -->
+      <div id="botButton" class="bot-button" onclick="toggleBot()">💬</div>
+      <!-- Contenedor del bot -->
+      <div id="botContainer" class="bot-container">
+          <div class="bot-header">
+              <h3>Willy</h3>
+              <button onclick="toggleBot()" class="close-btn">X</button>
+          </div>
+          <div class="bot-content">
+              <p>
+                Hola soy Willy el ayudante de Guille, el me transfirio su
+                personalidad para que te ayude a que lo conozcas mejor.
+              </p>
+          </div>
+          <div class="bot-input">
+              <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
+              <button onclick="sendMessage()">Enviar</button>
+          </div>
+      </div>
+    </div>
     <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/bot.js"></script>
   </body>
 </html>
