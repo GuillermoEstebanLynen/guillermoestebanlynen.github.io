@@ -14,21 +14,23 @@ buttonMessageSend.addEventListener('click', function() {
 
     var pregunta = messageToSend.value;
 
-    // Crear el elemento p con la clase 'messageUser'
-    var parrafo = document.createElement("p");
-    parrafo.classList.toggle("messageUser");
+    if (pregunta != ''){
+        // Crear el elemento p con la clase 'messageUser'
+        var parrafo = document.createElement("p");
+        parrafo.classList.toggle("messageUser");
 
-    // Crear el texto del párrafo
-    parrafo.innerHTML = '<i class="fa-solid fa-user"></i><span>'+pregunta+'</span>';
-    
-    // Añadir el párrafo al div
-    document.getElementById("boxMessage").appendChild(parrafo);
+        // Crear el texto del párrafo
+        parrafo.innerHTML = '<i class="fa-solid fa-user"></i><span>'+pregunta+'</span>';
+        
+        // Añadir el párrafo al div
+        document.getElementById("boxMessage").appendChild(parrafo);
 
-    //Borro caja de Mensaje
-    messageToSend.value = '';
+        //Borro caja de Mensaje
+        messageToSend.value = '';
 
-    //Envio a funcion para que responda
-    responderMensaje(pregunta);
+        //Envio a funcion para que responda
+        responderMensaje(pregunta);
+    }
 
 });
 
