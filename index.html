@@ -14,11 +14,15 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
+    <img src="./img/logoFullColor.svg" alt="" class="logoBackground">
     <!-- HEADER -->
     <header id="containerHeader">
-      <p id="menuToggle">
-        <i class="fa-solid fa-bars"></i>
-      </p>
+      <div id="containerLogoHeader">
+        <p id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </p>
+        <img src="./img/logoFullColor.svg" alt="">
+      </div>
       <nav id="navMenu">
         <ul>
           <li id="infoLink" class="active">
@@ -90,9 +94,9 @@
         <!-- BOT -->
         <div>
           <!-- Botón para abrir el bot -->
-          <div id="botButton" onclick="toggleBot()">💬</div>
+          <!-- <div id="botButton" onclick="toggleBot()">💬</div> -->
           <!-- Contenedor del bot -->
-          <div id="botContainer">
+          <!-- <div id="botContainer">
             <div class="bot-header">
               <h3>Willy</h3>
               <button onclick="toggleBot()" class="close-btn">X</button>
@@ -111,12 +115,15 @@
               />
               <button onclick="sendMessage()">Enviar</button>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <div>
         <section id="experience">
-          <h3 class="title-section">Experiencia Laboral</h3>
+          <h3 class="title-section">
+            <img src="./img/self-employed.png" alt="Experiencia Laboral">
+            <span>Experiencia Laboral</span>
+          </h3>
           <div id="containerItemsExperience">
             <div class="item-experience">
               <p class="date-experience">oct. 2022 - Presente</p>
@@ -152,7 +159,56 @@
             </div>
           </div>
         </section>
-        <section id="education">Educación</section>
+        <section id="education">
+          <h3 class="title-section">
+            <img src="./img/graduate.png" alt="Mis estudios">
+            <span>Mis Estudios</span>
+          </h3>
+          <div id="containerItemsEducation">
+            <div class="item-education">
+              <p class="date-education">oct. 2022 - Presente</p>
+              <div>
+                <p class="title-education">Titulo otorgado</p>
+                <p class="school-education">Facultad</p>
+              </div>
+            </div>
+            <div class="item-education">
+              <p class="date-education">oct. 2022 - Presente</p>
+              <div>
+                <p class="title-education">Titulo otorgado</p>
+                <p class="school-education">Facultad</p>
+              </div>
+            </div>
+            <div class="item-education">
+              <p class="date-education">oct. 2022 - Presente</p>
+              <div>
+                <p class="title-education">Titulo otorgado</p>
+                <p class="school-education">Facultad</p>
+              </div>
+            </div>
+            <div class="item-education">
+              <p class="date-education">oct. 2022 - Presente</p>
+              <div>
+                <p class="title-education">Titulo otorgado</p>
+                <p class="school-education">Facultad</p>
+              </div>
+            </div>
+            <div class="item-education">
+              <p class="date-education">oct. 2022 - Presente</p>
+              <div>
+                <p class="title-education">Titulo otorgado</p>
+                <p class="school-education">Facultad</p>
+              </div>
+            </div>
+            <div class="item-education">
+              <p class="date-education">oct. 2022 - Presente</p>
+              <div>
+                <p class="title-education">Titulo otorgado</p>
+                <p class="school-education">Facultad</p>
+              </div>
+            </div>
+          </div>
+        </section>
         <section id="skills">Habilidades</section>
         <section id="certifications">Certificaciones</section>
         <section id="myPerson">Mas sobre mi</section>

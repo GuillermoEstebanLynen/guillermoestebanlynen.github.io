@@ -39,12 +39,35 @@ html {
 section {
   min-height: 100vh;
   scroll-snap-align: start;
-  padding: 88px 20px 20px 20px;
+  padding: 90px 20px 20px 20px;
 }
 
 .title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
   border-bottom: 2px solid var(--primary-color);
   padding-bottom: 5px;
   margin-bottom: 5px;
+}
+
+.title-section *{
+  display: block;
+}
+
+.title-section img{
+  max-width: 50px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.logoBackground {
+  position: fixed;
+  opacity: 6%;
+  bottom: 250px;
+  left: 0;
+  width: 500px;
+  rotate: 45deg;
+  z-index: -1;
 }
