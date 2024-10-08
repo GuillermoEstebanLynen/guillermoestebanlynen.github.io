@@ -15,7 +15,7 @@ header {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
 }
 
 header.expandMobile{
@@ -26,17 +26,7 @@ header.expandMobile{
 }
 
 /* Botón de menú para pantallas pequeñas */
-/* #menu-toggle {
-  display: block;
-  width: auto;
-  padding: 12px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: var(--primary-color);
-  color: white;
-} */
-#menu-toggle > i {
+#menuToggle > i {
   display: inline-block;
   width: auto;
   padding: 12px;
@@ -65,7 +55,7 @@ nav {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 40px 20px 0 20px;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -73,7 +63,10 @@ nav ul {
 }
 
 nav ul li {
-  margin: 10px 0;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
 }
 
 nav ul li a {
@@ -82,10 +75,20 @@ nav ul li a {
   font-size: 2rem;
 }
 
-nav ul li a:hover {
+nav ul li.active{
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+
+nav ul li.active a{
+  color: white;
+  font-weight: bold;
+}
+
+/* nav ul li a:hover {
   font-size: 3rem;
   color: #ff6347;
-}
+} */
 
 /* Mostrar menú al hacer clic en el botón */
 nav.show {
@@ -107,7 +110,7 @@ h1 {
   text-align: center;
 }
 
-#info-summary {
+#infoSummary {
   font-weight: normal;
   font-size: 1.35rem;
   line-height: 2rem;
@@ -130,7 +133,7 @@ h1 {
   color: var(--secondary-color);;
 }
 
-#icon-scrool-container {
+#iconScroolContainer {
   display: flex;
   justify-content: center;
   margin: 40px 0;
@@ -172,4 +175,54 @@ h1 {
   width: 1.5em;
   border: .25em solid var(--primary-color);;
   border-radius: 1em;
+}
+
+/* ESTILOS EXPERIENCIA */
+
+.item-experience {
+  padding: 10px 0;
+}
+
+.date-experience {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.position-experience {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.enterprise-experience {
+  font-size: 1rem;
+  margin-top: 5px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.description-experience {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.description-tag {
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.description-tag li{
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
 }

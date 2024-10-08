@@ -1,5 +1,5 @@
 /* Estilo del botón flotante */
-.bot-button {
+#botButton {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -14,7 +14,7 @@
 }
 
 /* Contenedor del bot */
-.bot-container {
+#botContainer {
     display: none;
     position: fixed;
     bottom: 80px;
@@ -53,6 +53,10 @@
     padding: 10px;
     height: 200px;
     overflow-y: auto;
+}
+
+.bot-content > p {
+    font-size: 1rem;
 }
 
 /* Input del bot */

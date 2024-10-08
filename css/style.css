@@ -37,7 +37,14 @@ html {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: start;
-  padding: 91.59px 20px 20px 20px;
+  padding: 88px 20px 20px 20px;
+}
+
+.title-section {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }

@@ -16,37 +16,37 @@
   <body>
     <!-- HEADER -->
     <header id="containerHeader">
-      <p id="menu-toggle">
+      <p id="menuToggle">
         <i class="fa-solid fa-bars"></i>
       </p>
-      <nav id="nav-menu">
+      <nav id="navMenu">
         <ul>
-          <li>
+          <li id="infoLink" class="active">
             <a href="#" onclick="scrollToSection('info')">
               Inicio
             </a>
           </li>
-          <li>
+          <li id="experienceLink">
             <a href="#" onclick="scrollToSection('experience')">
               Experiencia
             </a>
           </li>
-          <li>
+          <li id="educationLink">
             <a href="#" onclick="scrollToSection('education')">
               Educación
             </a>
           </li>
-          <li>
+          <li id="skillsLink">
             <a href="#" onclick="scrollToSection('skills')">
               Habilidades
             </a>
           </li>
-          <li>
+          <li id="certificationsLink">
             <a href="#" onclick="scrollToSection('certifications')">
               Certificaciones
             </a>
           </li>
-          <li>
+          <li id="myPersonLink">
             <a href="#" onclick="scrollToSection('myPerson')">
               Mas sobre mi
             </a>
@@ -55,13 +55,13 @@
       </nav>
     </header>
     <!-- SECCIONES -->
-    <div class="scrool">
+    <main class="scrool">
       <section id="info">
         <h1>
           Hola soy<br />
           Guillermo
         </h2>
-        <h2 id="info-summary">
+        <h2 id="infoSummary">
           Soy Desarrollador FullStack y líder técnico con más de 10 años
           de experiencia en el desarrollo de aplicaciones y despliegue de
           aplicaciones en servidores.
@@ -80,7 +80,7 @@
             <i class="fa-brands fa-github"></i>
           </a>
         </p>
-        <div id="icon-scrool-container">
+        <div id="iconScroolContainer">
           <span class="scroll-icon">
             <span class="scroll-icon__wheel-outer">
               <span class="scroll-icon__wheel-inner"></span>
@@ -90,15 +90,15 @@
         <!-- BOT -->
         <div>
           <!-- Botón para abrir el bot -->
-          <div id="botButton" class="bot-button" onclick="toggleBot()">💬</div>
+          <div id="botButton" onclick="toggleBot()">💬</div>
           <!-- Contenedor del bot -->
-          <div id="botContainer" class="bot-container">
+          <div id="botContainer">
             <div class="bot-header">
               <h3>Willy</h3>
               <button onclick="toggleBot()" class="close-btn">X</button>
             </div>
             <div class="bot-content">
-              <p>
+              <p class="message-bot">
                 Hola soy Willy el ayudante de Guille, el me transfirio su
                 personalidad para que te ayude a que lo conozcas mejor.
               </p>
@@ -114,12 +114,48 @@
           </div>
         </div>
       </section>
-      <section id="experience">Experiencia</section>
+      <section id="experience">
+        <h3 class="title-section">Experiencia Laboral</h3>
+        <div id="containerItemsExperience">
+          <div class="item-experience">
+            <p class="date-experience">oct. 2022 - Presente</p>
+            <div>
+              <p class="position-experience">Coordinador Técnico | Desarrollador Full Stack</p>
+              <p class="enterprise-experience">GOPAP | Ministerio de Educación CABA</p>
+              <p class="description-experience">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi laudantium magni itaque, ullam blanditiis corporis hic sunt alias quas voluptates ducimus nostrum consectetur explicabo quos, atque iusto eum et assumenda?
+              </p>
+              <ul class="description-tag">
+                <li>tag</li>
+                <li>tag</li>
+                <li>tag</li>
+                <li>tag</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-experience">
+            <p class="date-experience">oct. 2022 - Presente</p>
+            <div>
+              <p class="position-experience">Coordinador Técnico | Desarrollador Full Stack</p>
+              <p class="enterprise-experience">GOPAP | Ministerio de Educación CABA</p>
+              <p class="description-experience">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi laudantium magni itaque, ullam blanditiis corporis hic sunt alias quas voluptates ducimus nostrum consectetur explicabo quos, atque iusto eum et assumenda?
+              </p>
+              <ul class="description-tag">
+                <li>tag</li>
+                <li>tag</li>
+                <li>tag</li>
+                <li>tag</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="education">Educación</section>
       <section id="skills">Habilidades</section>
       <section id="certifications">Certificaciones</section>
       <section id="myPerson">Mas sobre mi</section>
-    </div>
+    </main>
     <script src="./js/main.js"></script>
     <script src="./js/bot.js"></script>
   </body>
