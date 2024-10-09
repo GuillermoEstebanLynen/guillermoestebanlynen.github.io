@@ -261,3 +261,55 @@ h1 {
   font-weight: 500;
   color: var(--primary-color);
 }
+
+/* ESTILOS SKILLS */
+
+.containerItemsSkill {
+  padding: 10px 0;
+}
+
+.title-group-skill {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.item-skill {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.name-skill {
+  display: block;
+  text-align: right;
+  margin-right: 10px;
+  width: 40%;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.progress-container {
+  flex-grow: 0;
+  width: 60%;
+  background-color: #f3f3f3;
+  border-radius: 25px;
+}
+
+.progress-bar {
+  height: 30px;
+  background-color: #4caf50;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  width: 0; /* Se inicia desde 0 */
+  transition: width 3s; /* Transición para el ancho */
+}
+
+/* Estilo inicial sin animar */
+.progress-bar[data-filled="true"] {
+  width: var(--progress);
+}
