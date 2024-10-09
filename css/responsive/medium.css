@@ -1,22 +1,54 @@
 /* Tabletas y superiores (mínimo 768px) */
 @media (min-width: 768px) {
-  .menu-toggle {
+  #containerLogoHeader{
+    width: auto;
+  }
+  #menuToggle {
     display: none; /* Ocultar botón en pantallas grandes */
   }
 
   nav {
+    margin: 0;
     display: flex; /* Mostrar menú en pantallas grandes */
     flex-direction: row; /* Alinear elementos horizontalmente */
+    justify-content: right;
     position: static; /* Restablecer la posición */
     opacity: 1; /* Opacidad total en pantallas grandes */
     visibility: visible; /* Hacer visible el menú */
+    flex-grow: 1;
   }
 
   nav ul {
+    padding: 0;
     flex-direction: row; /* Alinear elementos en fila */
   }
 
   nav ul li {
-    margin-left: 20px; /* Margen entre elementos */
+    margin-left: 5px;
+  }
+
+  nav ul li a{
+    font-size: 1rem;
+  }
+
+  header {
+    background-color: white;
+  }
+
+  main {
+    display: flex;
+    max-height: 100%;
+  }
+
+  #info {
+    /* position: fixed; */
+  }
+
+  #scrollContent {
+    overflow: scroll;
+  }
+
+  #scrollContent section{
+    min-height: auto;
   }
 }

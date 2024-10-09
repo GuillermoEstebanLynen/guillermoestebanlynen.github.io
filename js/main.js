@@ -6,6 +6,13 @@ const redesMobile = document.getElementById("redesMobile");
 
 let linkActive = "infoLink";
 
+function checkWindowSize() {
+  if (window.innerWidth < 768) {
+    // Aquí va tu código cuando el ancho es menor a 768px
+    return true;
+  }
+}
+
 // Agrega el evento de click para mostrar/ocultar el menú
 menuToggle.addEventListener("click", () => {
   containerMenu.classList.toggle("expandMobile");
@@ -22,9 +29,11 @@ function scrollToSection(seccion) {
   document.getElementById(linkActive).classList.toggle("active");
 
   // Cierro menu movil
-  containerMenu.classList.toggle("expandMobile");
-  navMenu.classList.toggle("show");
-  redesMobile.classList.toggle("show");
+  if (checkWindowSize() == true) {
+    containerMenu.classList.toggle("expandMobile");
+    navMenu.classList.toggle("show");
+    redesMobile.classList.toggle("show");
+  }
 
   // Hago scrool a la seccion correspondiente
   document.getElementById(seccion).scrollIntoView({ behavior: "smooth" });
