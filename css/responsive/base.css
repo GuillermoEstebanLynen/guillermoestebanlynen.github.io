@@ -83,7 +83,7 @@ nav ul li {
 nav ul li a {
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 nav ul li.active{
@@ -312,4 +312,26 @@ h1 {
 /* Estilo inicial sin animar */
 .progress-bar[data-filled="true"] {
   width: var(--progress);
+}
+
+/* ESTILOS EXPERIENCIA */
+
+#myPerson {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-about {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-about *{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
 }
