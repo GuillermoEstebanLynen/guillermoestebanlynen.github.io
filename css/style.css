@@ -64,10 +64,11 @@ section {
 
 .logoBackground {
   position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 6%;
-  bottom: 250px;
-  left: 0;
   width: 500px;
-  rotate: 45deg;
+  /* rotate: 45deg; */
   z-index: -1;
 }
