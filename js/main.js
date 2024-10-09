@@ -2,6 +2,7 @@
 const containerMenu = document.getElementById("containerHeader");
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
+const redesMobile = document.getElementById("redesMobile");
 
 let linkActive = "infoLink";
 
@@ -9,6 +10,7 @@ let linkActive = "infoLink";
 menuToggle.addEventListener("click", () => {
   containerMenu.classList.toggle("expandMobile");
   navMenu.classList.toggle("show");
+  redesMobile.classList.toggle("show");
 });
 
 function scrollToSection(seccion) {
@@ -22,6 +24,7 @@ function scrollToSection(seccion) {
   // Cierro menu movil
   containerMenu.classList.toggle("expandMobile");
   navMenu.classList.toggle("show");
+  redesMobile.classList.toggle("show");
 
   // Hago scrool a la seccion correspondiente
   document.getElementById(seccion).scrollIntoView({ behavior: "smooth" });
