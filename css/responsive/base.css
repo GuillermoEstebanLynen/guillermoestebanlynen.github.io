@@ -11,7 +11,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 6%;
+  opacity: 2%;
   width: 500px;
   /* rotate: 45deg; */
   z-index: -1;
@@ -33,6 +33,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  background-color: white;
 }
 
 header img {
@@ -250,6 +251,7 @@ h1 {
 }
 
 .date-experience {
+  margin-top: 5px;
   font-size: 0.95rem;
   font-weight: 500;
 }
@@ -271,6 +273,7 @@ h1 {
 .description-experience {
   margin-top: 10px;
   font-size: 0.95rem;
+  line-height: 1.6rem;
 }
 
 .description-tag {
@@ -327,7 +330,7 @@ h1 {
   text-align: center;
   color: var(--primary-color);
   font-size: 1.2rem;
-  margin: 10px 0;
+  margin: 20px 0 5px 0;
 }
 
 .item-skill {
@@ -336,11 +339,15 @@ h1 {
   align-items: center;
 }
 
+.group-skill {
+  width: 100%;
+}
+
 .name-skill {
   display: block;
   text-align: right;
   margin-right: 10px;
-  width: 40%;
+  width: 30%;
   font-size: 1rem;
   color: var(--secondary-color);
 }
@@ -350,6 +357,7 @@ h1 {
   width: 60%;
   background-color: #f3f3f3;
   border-radius: 25px;
+  box-shadow: 2px 2px 5px rgb(220, 220, 220);
 }
 
 .progress-bar {
@@ -361,6 +369,7 @@ h1 {
   color: white;
   width: 0; /* Se inicia desde 0 */
   transition: width 3s; /* Transición para el ancho */
+  box-shadow: 2px 0 5px rgb(220, 220, 220);
 }
 
 /* Estilo inicial sin animar */
