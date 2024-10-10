@@ -1,3 +1,8 @@
 /* Escritorios pequeños y superiores (mínimo 1024px) */
 @media (min-width: 1024px) {
+
+  #logoBackground {
+    width: 1000px;
+  }
+
 }

@@ -1,6 +1,10 @@
 /* Tabletas y superiores (mínimo 768px) */
 @media (min-width: 768px) {
 
+  #logoBackground {
+    width: 700px;
+  }
+
   section {
     padding: 20px;
   }
@@ -146,6 +150,17 @@
   .school-education::before {
     margin-right: 10px;
     content: "|";
+  }
+
+  /* SKILLS */
+
+  .group-skill {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .name-skill, .progress-container {
+    width: 50%;
   }
 
 }

@@ -6,6 +6,17 @@ html {
   font-family: Arial, sans-serif;
 }
 
+#logoBackground {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 6%;
+  width: 500px;
+  /* rotate: 45deg; */
+  z-index: -1;
+}
+
 section {
   min-height: 100vh;
   scroll-snap-align: start;
