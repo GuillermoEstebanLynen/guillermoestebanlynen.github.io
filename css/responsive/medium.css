@@ -2,6 +2,7 @@
 @media (min-width: 768px) {
 
   #logoBackground {
+    opacity: 2%;
     width: 700px;
   }
 
@@ -89,7 +90,7 @@
   }
 
   #scrollContent {
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   #scrollContent section{
@@ -104,6 +105,10 @@
     align-items: center;
   }
 
+  .item-experience {
+    padding: 25px 0;
+  }
+
   .date-experience, .position-experience {
     margin-top: 0;
     font-size: 1.2rem;
@@ -116,7 +121,7 @@
 
   .description-experience {
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
   }
 
   .description-tag {
@@ -154,13 +159,43 @@
 
   /* SKILLS */
 
-  .group-skill {
-    width: 100%;
-    padding: 0 10%;
+  .flex-skills {
+    display: flex;
   }
 
-  .name-skill, .progress-container {
+  .containerItemsSkill {
     width: 50%;
+  }
+
+  .flex-skills > *{
+    flex-grow: 1;
+  }
+
+  .group-skill {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .title-group-skill {
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+
+  .name-skill {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 40%;
+  }
+  
+  .progress-container {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 60%;
+  }
+
+  .text-about *{
+    margin: 25px 0;
+    line-height: 1.8rem;
   }
 
 }
