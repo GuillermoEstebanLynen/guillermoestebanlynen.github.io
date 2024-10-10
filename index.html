@@ -14,14 +14,15 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
-    <img src="./img/logoFullColor.svg" alt="" class="logoBackground">
+    <img src="./img/logoFullColor.svg" alt="" id="logoBackground">
     <!-- HEADER -->
     <header id="containerHeader">
       <div id="containerLogoHeader">
         <p id="menuToggle">
           <i class="fa-solid fa-bars"></i>
         </p>
-        <img src="./img/logoFullColor.svg" alt="">
+        <img src="./img/logoFullColor.svg" alt="" id="logoFullColor">
+        <img src="./img/logoWhite.svg" alt="" id="logoWhite">
       </div>
       <nav id="navMenu">
         <ul>
@@ -123,17 +124,18 @@
       <div id="scrollContent">
         <section id="experience">
           <h3 class="title-section">
-            <img src="./img/self-employed.png" alt="Experiencia Laboral">
+            <i class="fa-solid fa-briefcase"></i>
             <span>Experiencia Laboral</span>
           </h3>
           <div id="containerItemsExperience">
             <div class="item-experience">
-              <p class="date-experience">oct. 2022 - Presente</p>
-              <div>
+              <div class="flex-experience">
+                <p class="date-experience">oct. 2022 - Presente</p>
                 <p class="position-experience">Coordinador Técnico | Desarrollador Full Stack</p>
-                <p class="enterprise-experience">GOPAP | Ministerio de Educación CABA</p>
-                <p class="description-experience">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi laudantium magni itaque, ullam blanditiis corporis hic sunt alias quas voluptates ducimus nostrum consectetur explicabo quos, atque iusto eum et assumenda?
+              </div>
+              <p class="enterprise-experience">GOPAP | Ministerio de Educación CABA</p>
+              <p class="description-experience">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi laudantium magni itaque, ullam blanditiis corporis hic sunt alias quas voluptates ducimus nostrum consectetur explicabo quos, atque iusto eum et assumenda?
                 </p>
                 <ul class="description-tag">
                   <li>tag</li>
@@ -141,13 +143,12 @@
                   <li>tag</li>
                   <li>tag</li>
                 </ul>
-              </div>
             </div>
           </div>
         </section>
         <section id="education">
           <h3 class="title-section">
-            <img src="./img/graduate.png" alt="Mis habilidades">
+            <i class="fa-solid fa-user-graduate"></i>
             <span>Mis Estudios</span>
           </h3>
           <div id="containerItemsEducation">
@@ -162,7 +163,7 @@
         </section>
         <section id="skills">
           <h4 class="title-section">
-            <img src="./img/skills.png" alt="Habilidades Técnicas">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
             <span>Habilidades Técnicas</span>
           </h3>
           <div id="containerItemsSkill">
@@ -179,7 +180,7 @@
         </section>
         <section id="certifications">
           <h4 class="title-section">
-            <img src="./img/certification.png" alt="Certificaciones">
+            <i class="fa-solid fa-award"></i>
             <span>Certificaciones</span>
           </h3>
           <div id="containerItemsCertification">
@@ -192,7 +193,7 @@
         </section>
         <section id="myPerson">
           <h4 class="title-section">
-            <img src="./img/about.png" alt="Sobre mi">
+            <i class="fa-regular fa-address-card"></i>
             <span>Mas sobre mi</span>
           </h3>
           <div class="text-about">

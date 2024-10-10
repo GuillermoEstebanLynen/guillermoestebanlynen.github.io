@@ -30,39 +30,17 @@ html {
   scroll-padding-top: 60px;
 }
 
-.scrool {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-section {
-  min-height: 100vh;
-  scroll-snap-align: start;
-  padding: 90px 20px 20px 20px;
-}
-
-.title-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  border-bottom: 2px solid var(--primary-color);
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-}
-
 .title-section *{
   display: block;
   margin-bottom: 10px;
 }
 
-.title-section img{
+.title-section i{
   max-width: 50px;
   margin-right: 20px;
 }
 
-.logoBackground {
+#logoBackground {
   position: fixed;
   top: 50%;
   left: 50%;

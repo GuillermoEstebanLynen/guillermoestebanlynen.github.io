@@ -1,8 +1,27 @@
 /* Tabletas y superiores (mínimo 768px) */
 @media (min-width: 768px) {
+
+  section {
+    padding: 20px;
+  }
+
+  section:nth-child(1) {
+    padding-top: 110px;
+  }
+
+  .title-section {
+    justify-content: start;
+    font-size: 1.5rem;
+  }
+
+  .scrool {
+    overflow-y: unset;
+  }
+
   #containerLogoHeader{
     width: auto;
   }
+
   #menuToggle {
     display: none; /* Ocultar botón en pantallas grandes */
   }
@@ -28,11 +47,24 @@
   }
 
   nav ul li a{
+    color: white;
     font-size: 1rem;
   }
 
   header {
-    background-color: white;
+    background-color: var(--secondary-color);
+  }
+
+  #logoFullColor {
+    display: none;
+  }
+
+  #logoWhite {
+    display: block;
+  }
+
+  #infoLink {
+    display: none;
   }
 
   main {
@@ -41,7 +73,15 @@
   }
 
   #info {
-    /* position: fixed; */
+    background: var(--primary-color);
+  }
+
+  #info h1, #info h2 {
+    color: white;
+  }
+
+  #iconScroolContainer {
+    display: none;
   }
 
   #scrollContent {
@@ -51,4 +91,61 @@
   #scrollContent section{
     min-height: auto;
   }
+
+  /* EXPERIENCIA */
+
+  .flex-experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .date-experience, .position-experience {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .enterprise-experience {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+
+  .description-experience {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .description-tag {
+    font-size: 1.05rem;
+  }
+
+  /* EDUCATION */
+
+  .item-education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item-education > div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .date-education, .title-education, .school-education {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .school-education {
+    margin-left: 10px;
+  }
+
+  .school-education::before {
+    margin-right: 10px;
+    content: "|";
+  }
+
 }

@@ -6,6 +6,12 @@ html {
   font-family: Arial, sans-serif;
 }
 
+section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  padding: 90px 20px 20px 20px;
+}
+
 /* Estilo para el header */
 header {
   position: fixed;
@@ -99,17 +105,22 @@ nav ul li.active a{
   font-weight: bold;
 }
 
-/* nav ul li a:hover {
-  font-size: 3rem;
-  color: #ff6347;
-} */
-
 /* Mostrar menú al hacer clic en el botón */
 nav.show {
   display: flex; /* Mostrar menú */
   opacity: 1; /* Opacidad total */
   visibility: visible; /* Hacer visible el menú */
   flex-grow: 1;
+}
+
+#logoWhite {
+  display: none;
+}
+
+.scrool {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 /* ESTILOS HOME */
@@ -211,6 +222,17 @@ h1 {
 }
 
 /* ESTILOS EXPERIENCIA */
+
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
 
 .item-experience {
   padding: 10px 0;
