@@ -6,6 +6,19 @@ const redesMobile = document.getElementById("redesMobile");
 
 let linkActive = "infoLink";
 
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
+window.addEventListener('scroll', debounce(function() {
+  document.getElementById(linkActive).classList.toggle("active");
+}, 10000)); // 10s de espera antes de ejecutar la función
+
+
 function checkWindowSize() {
   if (window.innerWidth < 768) {
     // Aquí va tu código cuando el ancho es menor a 768px
