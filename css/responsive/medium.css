@@ -2,7 +2,6 @@
 @media (min-width: 768px) {
 
   #logoBackground {
-    opacity: 2%;
     width: 700px;
   }
 
@@ -82,6 +81,10 @@
   }
 
   #info h1, #info h2 {
+    color: white;
+  }
+
+  #redes > a{
     color: white;
   }
 
