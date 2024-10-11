@@ -365,7 +365,7 @@ h1 {
 
 .title-group-skill {
     text-align: center;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.2rem;
     margin: 20px 0 5px 0;
 }
@@ -381,16 +381,33 @@ h1 {
 }
 
 .name-skill {
-    display: block;
-    text-align: right;
+    display: flex;
+    align-items: center;
     margin-right: 10px;
     width: 30%;
     font-size: 1rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.name-skill > img{
+  max-height: 30px;
+  max-width: 16px;
+  margin-right: 10px;
+}
+
+.name-skill > span{
+  /* margin-left: 15px; */
 }
 
 .name-skill > i{
   margin-right: 10px;
+}
+
+#mogoDBLogo {
+  max-height: initial;
+  max-width: initial;
+  height: 30px;
+  width: auto;
 }
 
 .progress-container {

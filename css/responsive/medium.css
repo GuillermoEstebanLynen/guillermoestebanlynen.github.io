@@ -77,7 +77,7 @@
   }
 
   #info {
-    background: var(--primary-color);
+    background: url(../../img/backgound.svg), var(--primary-color);
   }
 
   #info h1, #info h2 {
