@@ -1,441 +1,462 @@
 /* ESTILOS PARA EL HEADER */
 body,
 html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 #logoBackground {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 6%;
-  width: 500px;
-  /* rotate: 45deg; */
-  z-index: -1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 6%;
+    width: 500px;
+    /* rotate: 45deg; */
+    z-index: -1;
 }
 
 section {
-  min-height: 100vh;
-  scroll-snap-align: start;
-  padding: 90px 20px 20px 20px;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    padding: 90px 20px 20px 20px;
 }
 
 /* Estilo para el header */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
 }
 
 header img {
-  display: block;
-  max-height: 50px;
+    display: block;
+    max-height: 50px;
 }
 
-header.expandMobile{
-  width: 100%;
-  flex-direction: column;
-  position: absolute;
-  height: 100vh;
-  background-color: white;
+header.expandMobile {
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    background-color: white;
 }
 
-#containerLogoHeader{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+#containerLogoHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Botón de menú para pantallas pequeñas */
 #menuToggle > i {
-  display: inline-block;
-  width: auto;
-  padding: 12px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: var(--primary-color);
-  color: white;
+    display: inline-block;
+    width: auto;
+    padding: 12px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
 }
 
 /* Menú oculto por defecto */
 
 nav {
-  margin-top: 20px;
-  display: none; /* Ocultar menú en móviles */
-  flex-direction: column;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  background-color: transparent;
-  opacity: 0; /* Opacidad inicial */
-  transition: opacity 2s linear, visibility 2s linear; /* Transición */
-  visibility: hidden; /* Ocultar el menú */
+    margin-top: 20px;
+    display: none; /* Ocultar menú en móviles */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    opacity: 0; /* Opacidad inicial */
+    transition: opacity 2s linear, visibility 2s linear; /* Transición */
+    visibility: hidden; /* Ocultar el menú */
 }
 
-
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 40px 20px 0 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  font-size: 3rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 40px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 3rem;
 }
 
 nav ul li {
-  display: flex;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 5px 0;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
 }
 
 nav ul li a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-size: 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
 }
 
-nav ul li.active{
-  background-color: var(--primary-color);
-  font-weight: bold;
+nav ul li.active {
+    background-color: var(--primary-color);
+    font-weight: bold;
 }
 
-nav ul li.active a{
-  color: white;
-  font-weight: bold;
+nav ul li.active a {
+    color: white;
+    font-weight: bold;
 }
 
 /* Mostrar menú al hacer clic en el botón */
 nav.show {
-  display: flex; /* Mostrar menú */
-  opacity: 1; /* Opacidad total */
-  visibility: visible; /* Hacer visible el menú */
-  flex-grow: 1;
+    display: flex; /* Mostrar menú */
+    opacity: 1; /* Opacidad total */
+    visibility: visible; /* Hacer visible el menú */
+    flex-grow: 1;
 }
 
 #logoWhite {
-  display: none;
+    display: none;
 }
 
 .scrool {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 /* ESTILOS HOME */
 
 #info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circleBackground {
+  opacity: 50%;
+    z-index: -2000;
+    width: 300px;
+    height: 300px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 350; /* Ajusta estas coordenadas según donde quieras posicionar el círculo */
+    left: 250; /* Ajusta estas coordenadas según donde quieras posicionar el círculo */
 }
 
 #profileImage {
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-#profileImage > img{
-  border-radius: 50%;
-  overflow: hidden;
-  width: 200px;
+#profileImage > img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
 }
 
 h1 {
-  font-size: 3.2rem;
-  text-align: center;
+    font-size: 3.2rem;
+    text-align: center;
 }
 
 #infoSummary {
-  font-weight: normal;
-  font-size: 1.35rem;
-  line-height: 2rem;
-  padding: 15px 0;
-  text-align: center;
+    font-weight: normal;
+    font-size: 1.35rem;
+    line-height: 2rem;
+    padding: 15px 0;
+    text-align: center;
 }
 
 #redes {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 #redes > a {
-  color: var(--primary-color);;
-  font-size: 2.1rem;
-  margin-right: 10px;
+    color: var(--primary-color);
+    font-size: 2.1rem;
+    margin-right: 10px;
 }
 
 #redes > a:hover {
-  color: var(--secondary-color);;
+    color: var(--secondary-color);
 }
 
-#redesMobile{
-  display: none;
+#redesMobile {
+    display: none;
 }
 
-#redesMobile.show{
-  display: block;
-  text-align: right;
+#redesMobile.show {
+    display: block;
+    text-align: right;
 }
 
 #redesMobile > a {
-  color: var(--primary-color);;
-  font-size: 2.1rem;
-  margin-right: 10px;
+    color: var(--primary-color);
+    font-size: 2.1rem;
+    margin-right: 10px;
 }
 
 #redesMobile > a:hover {
-  color: var(--secondary-color);;
+    color: var(--secondary-color);
 }
 
 #iconScroolContainer {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
 }
 
 @keyframes animationIconScroll {
-  0%   { transform: translateY(0); }
-  25%  { transform: translateY(-0.6em); }
-  50%  { transform: translateY(0); }
-  75%  { transform: translateY(0.6em); }
-  100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-0.6em);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(0.6em);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .scroll-icon__wheel-outer {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: .6em;
-  height: 1em;
-  width: .4em;
-  margin-left: -.2em;
-  border-radius: .4em;
-  overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0.6em;
+    height: 1em;
+    width: 0.4em;
+    margin-left: -0.2em;
+    border-radius: 0.4em;
+    overflow: hidden;
 }
 
 .scroll-icon__wheel-inner {
-  display: block;
-  height: 100%;
-  width: 100%;
-  border-radius: inherit;
-  background: var(--primary-color);;
-  animation: animationIconScroll 2.75s ease-in-out infinite;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background: var(--primary-color);
+    animation: animationIconScroll 2.75s ease-in-out infinite;
 }
 
 .scroll-icon {
-  display: block;
-  position: relative;
-  height: 3em;
-  width: 1.5em;
-  border: .25em solid var(--primary-color);;
-  border-radius: 1em;
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 1.5em;
+    border: 0.25em solid var(--primary-color);
+    border-radius: 1em;
 }
 
 /* ESTILOS EXPERIENCIA */
 
 .title-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-  padding-bottom: 5px;
-  margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .item-experience {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 .date-experience {
-  margin-top: 5px;
-  font-size: 0.95rem;
-  font-weight: 500;
+    margin-top: 5px;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .position-experience {
-  font-size: 1rem;
-  margin-top: 10px;
-  font-weight: bold;
-  color: var(--secondary-color);
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 .enterprise-experience {
-  font-size: 1rem;
-  margin-top: 5px;
-  font-weight: 500;
-  color: var(--primary-color);
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: 500;
+    color: var(--primary-color);
 }
 
 .description-experience {
-  margin-top: 10px;
-  font-size: 0.95rem;
-  line-height: 1.6rem;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6rem;
 }
 
 .description-tag {
-  font-size: 0.9rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.description-tag li{
-  margin-top: 10px;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin-right: 10px;
+.description-tag li {
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
 
 /* ESTILOS EDUCATIVOS */
 
 .item-education {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 .date-education {
-  font-size: 0.95rem;
-  font-weight: 500;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
 .title-education {
-  font-size: 1rem;
-  margin-top: 10px;
-  font-weight: bold;
-  color: var(--secondary-color);
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
-.school-education{
-  font-size: 1rem;
-  margin-top: 5px;
-  font-weight: 500;
-  color: var(--primary-color);
+.school-education {
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: 500;
+    color: var(--primary-color);
 }
 
 /* ESTILOS SKILLS */
 
 .containerItemsSkill {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 .title-group-skill {
-  text-align: center;
-  color: var(--primary-color);
-  font-size: 1.2rem;
-  margin: 20px 0 5px 0;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 20px 0 5px 0;
 }
 
 .item-skill {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .group-skill {
-  width: 100%;
+    width: 100%;
 }
 
 .name-skill {
-  display: block;
-  text-align: right;
-  margin-right: 10px;
-  width: 30%;
-  font-size: 1rem;
-  color: var(--secondary-color);
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+    width: 30%;
+    font-size: 1rem;
+    color: var(--secondary-color);
 }
 
 .progress-container {
-  flex-grow: 0;
-  width: 60%;
-  background-color: #f3f3f3;
-  border-radius: 25px;
-  box-shadow: 2px 2px 5px rgb(220, 220, 220);
+    flex-grow: 0;
+    width: 60%;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgb(220, 220, 220);
 }
 
 .progress-bar {
-  height: 30px;
-  background-color: #4caf50;
-  border-radius: 20px;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-  width: 0; /* Se inicia desde 0 */
-  transition: width 3s; /* Transición para el ancho */
-  box-shadow: 2px 0 5px rgb(220, 220, 220);
+    height: 30px;
+    background-color: #4caf50;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    width: 0; /* Se inicia desde 0 */
+    transition: width 3s; /* Transición para el ancho */
+    box-shadow: 2px 0 5px rgb(220, 220, 220);
 }
 
 /* Estilo inicial sin animar */
 .progress-bar[data-filled="true"] {
-  width: var(--progress);
+    width: var(--progress);
 }
 
 /* ESTILOS CERTIFICATION */
 
 .title-group-certification {
-  text-align: center;
-  color: var(--primary-color);
-  font-size: 1.2rem;
-  margin: 10px 0;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
 .group-certification {
-  font-size: 0.9rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.group-certification li{
-  margin-top: 10px;
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin-right: 10px;
+.group-certification li {
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
 
 /* ESTILOS SOBRE MI */
 
 #myPerson {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-about {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.text-about *{
-  text-align: center;
-  margin: 10px 0;
-  font-size: 1.2rem;
-  line-height: 2rem;
+.text-about * {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
