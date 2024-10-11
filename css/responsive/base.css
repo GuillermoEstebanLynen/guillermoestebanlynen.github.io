@@ -389,6 +389,10 @@ h1 {
     color: var(--secondary-color);
 }
 
+.name-skill > i{
+  margin-right: 10px;
+}
+
 .progress-container {
     flex-grow: 0;
     width: 60%;
