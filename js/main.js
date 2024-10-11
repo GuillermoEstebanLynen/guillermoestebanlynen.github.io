@@ -15,7 +15,8 @@ function debounce(func, wait) {
 }
 
 window.addEventListener('scroll', debounce(function() {
-  document.getElementById(linkActive).classList.toggle("active");
+  console.log(document.getElementById(linkActive));
+  document.getElementById(linkActive).classList.remove("active");
 }, 10000)); // 10s de espera antes de ejecutar la función
 
 
