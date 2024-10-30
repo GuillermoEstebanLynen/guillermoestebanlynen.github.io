@@ -144,7 +144,7 @@ nav.show {
 }
 
 .circleBackground {
-  opacity: 50%;
+    opacity: 50%;
     z-index: -2000;
     width: 300px;
     height: 300px;
@@ -156,23 +156,23 @@ nav.show {
 }
 
 #profileImage {
-  padding: 20px 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     border-radius: 50%;
     overflow: hidden;
     width: 200px;
     height: 200px;
-}
-
-#profileImage > img {
-    border-radius: 50%;
-    overflow: hidden;
     box-shadow: 0px 0px 20px black;
 }
 
+#profileImage > img {
+    max-height: 100%;
+    width: auto;
+}
+
 h1 {
-  margin: 10px 0;
+    margin: 10px 0;
     font-size: 3.2rem;
     text-align: center;
 }
@@ -391,25 +391,25 @@ h1 {
     color: var(--primary-color);
 }
 
-.name-skill > img{
-  max-height: 30px;
-  max-width: 16px;
-  margin-right: 10px;
+.name-skill > img {
+    max-height: 30px;
+    max-width: 16px;
+    margin-right: 10px;
 }
 
-.name-skill > span{
-  /* margin-left: 15px; */
+.name-skill > span {
+    /* margin-left: 15px; */
 }
 
-.name-skill > i{
-  margin-right: 10px;
+.name-skill > i {
+    margin-right: 10px;
 }
 
 #mogoDBLogo {
-  max-height: initial;
-  max-width: initial;
-  height: 30px;
-  width: auto;
+    max-height: initial;
+    max-width: initial;
+    height: 30px;
+    width: auto;
 }
 
 .progress-container {
